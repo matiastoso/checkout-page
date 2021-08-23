@@ -1,1 +1,97 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+h1 {
+  color: #4E5150;
+}
+
+.formularios {
+  position: relative;
+}
+
+.formularios input[type="text"], .formularios input[type="email"], .formularios #country {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #828282;
+  margin-top: 3px;
+  padding: 10px 40px;
+}
+
+.formularios input[type="text"]:focus, .formularios input[type="email"]:focus, .formularios #country:focus {
+  outline: none;
+}
+
+.formularios input[name="fullname"]::-webkit-input-placeholder {
+  color: #4E5150;
+  font-weight: bold;
+}
+
+.formularios input[name="fullname"]:-ms-input-placeholder {
+  color: #4E5150;
+  font-weight: bold;
+}
+
+.formularios input[name="fullname"]::-ms-input-placeholder {
+  color: #4E5150;
+  font-weight: bold;
+}
+
+.formularios input[name="fullname"]::placeholder {
+  color: #4E5150;
+  font-weight: bold;
+}
+
+.formularios label {
+  color: #4E5150;
+  font-weight: 500;
+}
+
+.email-icon {
+  color: #828282;
+  position: absolute;
+  left: 10px;
+  top: 38px;
+}
+
+.phone-icon {
+  color: #828282;
+  position: absolute;
+  left: 10px;
+  top: 38px;
+}
+
+.email-account {
+  color: #828282;
+  position: absolute;
+  left: 10px;
+  top: 38px;
+}
+
+.public-icon {
+  color: #828282;
+  position: absolute;
+  left: 22px;
+  top: 38px;
+}
+
+.city-icon {
+  color: #828282;
+  position: absolute;
+  left: 22px;
+  top: 38px;
+}
+
+.btn-continue {
+  float: right;
+  background: #F2994A;
+  color: white;
+  width: 160px;
+  height: 50px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-continue:hover {
+  background: #f5a45d;
+}
+/*# sourceMappingURL=styles.css.map */

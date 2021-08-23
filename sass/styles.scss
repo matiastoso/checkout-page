@@ -1,0 +1,85 @@
+// VARIABLES
+$gray: #4E5150;
+$light-gray: #828282;
+
+h1 {
+    color: $gray;
+}
+
+// FORMS
+.formularios {
+    position: relative;
+
+    input[type="text"], input[type="email"], #country {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid #828282;
+        margin-top: 3px;
+        padding: 10px 40px;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input[name="fullname"]::placeholder {
+        color: $gray;
+        font-weight: bold;
+    }
+
+    label {
+        color: $gray;
+        font-weight: 500;
+    }
+}
+
+.email-icon {
+    color: $light-gray;
+    position: absolute;
+    left: 10px;
+    top: 38px;
+}
+
+.phone-icon {
+    color: $light-gray;
+    position: absolute;
+    left: 10px;
+    top: 38px;
+}
+
+.email-account {
+    color: $light-gray;
+    position: absolute;
+    left: 10px;
+    top: 38px;
+}
+
+.public-icon {
+    color: $light-gray;
+    position: absolute;
+    left: 22px;
+    top: 38px;
+}
+
+.city-icon {
+    color: $light-gray;
+    position: absolute;
+    left: 22px;
+    top: 38px;
+}
+
+.btn-continue {
+    float: right;
+    background: #F2994A;
+    color: white;
+    width: 160px;
+    height: 50px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    transition: all .3s;
+
+    &:hover {
+        background: #f5a45d;
+    }
+}

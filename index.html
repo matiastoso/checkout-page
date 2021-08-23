@@ -6,39 +6,88 @@
   maximum-scale=5"/>
   <link rel="icon" href="images/devchallenges.png" />
   <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Checkout Page</title>
 </head>
 
 <body>
-  <div class="welcome">
-    <div class="welcome-text">
-      <h1>
-        Welcome to
-        <a href="https://devchallenges.io/" target="_blank">devchallenges.io</a>
-      </h1>
+  <div class="container pb-5">
+    <h1 class="my-4">Checkout</h1>
 
-      <p>
-        If you have any questions, don't hesitate to ask on Discord. Here are
-        7 general steps to complete the challenge:
-      </p>
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-5">
+        <h5 class="mb-1">Contact information</h5>
+
+        <!-- CONTACT INFORMATION -->
+        <form>
+          <div class="formularios">
+            <label for="E-mail">E-mail</label> <br>
+            <input type="email" name="E-mail" placeholder="Enter your mail..."> <br> <br>
+            <span class="material-icons email-icon">email</span>
+          </div>
+
+          <div class="formularios">
+            <label for="Phone">Phone</label> <br>
+            <input type="text" name="Phone" placeholder="Enter your phone...">
+            <span class="material-icons phone-icon">phone</span>
+          </div>
+        </form>
+
+        <!-- SHOPPING ADDRESS -->
+        <h5 class="mt-5 mb-1">Contact information</h5>
+
+        <form>
+          <div class="formularios">
+            <label for="fullname">Full name</label> <br>
+            <input type="text" name="fullname" placeholder="Rodney Cotton"> <br><br>
+            <span class="material-icons email-account">account_circle</span>
+          </div>
+
+          <div class="formularios">
+            <label for="address">Address</label> <br>
+            <input type="text" name="address" placeholder="Your address..."> <br><br>
+            <span class="material-icons phone-icon">home</span>
+          </div>
+
+          <div class="formularios">
+            <label for="address">City</label> <br>
+            <input type="text" name="address" placeholder="Your city..."> <br><br>
+            <span class="material-icons phone-icon">location_city</span>
+          </div>
+
+          <section class="row">
+            <div class="col-6 formularios">
+              <label for="address">Country</label> <br>
+              <select name="contry" id="country" name="address" placeholder="Your country...">
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="brasil">Brasil</option>
+                <option value="uruguay">Uruguay</option>
+              </select>
+
+              <span class="material-icons public-icon">public</span>
+            </div>
+
+            <div class="col-6 formularios">
+              <label for="address">Postal Code</label> <br>
+              <input type="text" name="address" placeholder="Your postal code...">
+              <span class="material-icons city-icon">markunread_mailbox</span>
+            </div>
+          </section>
+
+          <input class="me-1 mt-3" type="checkbox" name="nextTime" id="">
+          <label class="text-muted" for="nextTime">Save this information for next time</label>
+        </form>
+
+        <button class="mt-4 btn-continue">Continue</button>
+      </div>
+
+      <div class="col-12 col-md-5">
+
+      </div>
     </div>
-
-    <ul>
-      <li><b>Step 1:</b> Create a new repository on github</li>
-      <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-      <li>
-        <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-      </li>
-      <li><b>Step 4:</b> Complete all user stories</li>
-      <li><b>Step 5:</b> Update README.md</li>
-      <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-      <li>
-        <b>Step 7:</b> Share your solution on Discord, Twitter and other
-        platforms to ask for feedback
-      </li>
-    </ul>
   </div>
 </body>
 </html>
