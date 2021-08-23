@@ -94,4 +94,114 @@ h1 {
 .btn-continue:hover {
   background: #f5a45d;
 }
+
+.w-100 {
+  border-radius: 12px;
+  background: #F2F2F2;
+}
+
+.carrito {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 40px 16px;
+}
+
+.carrito img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.carrito h5 {
+  color: #4E5150;
+}
+
+.carrito .precio {
+  color: #F2994A;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.carrito .precio_original {
+  color: #4E5150;
+  margin-left: 5px;
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.carrito .contador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 10px 5px;
+  margin-top: 30%;
+  width: 70%;
+  height: 52px;
+}
+
+.carrito .contador .items {
+  color: #333;
+  font-weight: bold;
+}
+
+.carrito .contador .material-icons {
+  color: #4E5150;
+  border-radius: 5px;
+  background: #E0E0E0;
+  cursor: pointer;
+  -webkit-animation: all .5s;
+          animation: all .5s;
+}
+
+.carrito .contador .material-icons:hover {
+  background-color: #dadada;
+}
+
+.shipping, .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #BDBDBD;
+  padding-top: 10px;
+}
+
+.shipping span, .total span {
+  color: #333;
+  font-weight: bold;
+}
+
+.shipping {
+  border-top: 1px solid #BDBDBD;
+  margin-top: 82px;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+  #order-1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #order-2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
